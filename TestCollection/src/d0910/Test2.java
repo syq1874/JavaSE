@@ -37,18 +37,18 @@ public class Test2 {
 		System.out.println(o);
 		
 		//遍历集合   普通for循环
-		System.out.println("================遍历集合   普通for循环================");
+		System.out.println("================遍历集合普通for循环================");
 		for(int i = 0 ;i<list.size();i++) {
 			System.out.println(list.get(i));
 		}
 		
 		//遍历集合   增强for循环
-		System.out.println("==================遍历集合   增强for循环==============");
+		System.out.println("==================遍历集合增强for循环==============");
 		for(Object obj:list) {
 			System.out.println(obj);
 		}
 		
-		System.out.println("==================遍历集合   迭代器==============");
+		System.out.println("==================遍历集合迭代器==============");
 		Iterator it=list.iterator();
 		while (it.hasNext()/* 存在下一个元素就将他输出出来 */) {
 			System.out.println(it.next());
