@@ -1,11 +1,12 @@
 package d0913;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class TestInteger {
 
     public static void main(String[] args) {
-        HashSet<Integer> hs= new HashSet<>();
+        LinkedHashSet<Integer> hs= new LinkedHashSet<>();
         System.out.println(hs.add(9));
         hs.add(4);
         hs.add(20);
