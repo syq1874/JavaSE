@@ -14,5 +14,6 @@ public class TestStudent {
         System.out.println(hs.size());
         System.out.println(hs);
         //自定义的类型不满足唯一不重复的特点
+        //重写hashcode和equals方法后满足底层的原理
     }
 }
