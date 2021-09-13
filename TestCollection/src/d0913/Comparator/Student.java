@@ -1,8 +1,9 @@
-package d0913;
+package d0913.Comparator;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Student implements Comparable<Student>{
+public class Student {
     private int age;
     private String name;
 
@@ -49,11 +50,34 @@ public class Student implements Comparable<Student>{
         return Objects.hash(age, name);
     }
 
+}
+
+
+class BiJiao01 implements Comparator<Student> {
+
     @Override
-    public int compareTo(Student o) {
-        //按照年龄进行比较
-        //return this.getAge()-o.getAge();
-        //按照姓名进行比较
-        return this.getName().compareTo(o.getName());
+    public int compare(Student o1, Student o2) {
+        return o1.getAge()-o2.getAge();
     }
 }
+
+class BiJiao02 implements Comparator<Student>{
+
+    @Override
+    public int compare(Student o1, Student o2) {
+        return o1.getName().compareTo(o2.getName());
+    }
+}
+
+class BiJiao03 implements Comparator<Student>{
+
+    @Override
+    public int compare(Student o1, Student o2) {
+        if(o1.getAge()-o2.getAge()==0){
+            return o1.getName().compareTo(o2.getName());
+        }else {
+            return o1.getAge()-o2.getAge();
+        }
+    }
+}
+
