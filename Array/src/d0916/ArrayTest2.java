@@ -11,5 +11,11 @@ public class ArrayTest2 {
         System.out.println(arr3[1][0]);
         System.out.println(arr.length);
         System.out.println(arr[0].length);
+
+        for (int i=0;i<arr.length;i++){
+            for (int j=0;j<arr[1].length;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+        }
     }
 }
