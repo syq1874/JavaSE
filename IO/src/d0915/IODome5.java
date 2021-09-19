@@ -11,7 +11,7 @@ public class IODome5 {
             BufferedInputStream bis = new BufferedInputStream(fis);
             OutputStream fos = new FileOutputStream("D:\\1.mp4");
             BufferedOutputStream bos = new BufferedOutputStream(fos);
-            byte[] car = new byte[1024*1024];
+            byte[] car = new byte[1024*1024*512];
             int len = 0;
             while ((len=bis.read(car))!=-1){
                 bos.write(car,0,len);
@@ -19,7 +19,7 @@ public class IODome5 {
             bis.close();
             bos.close();
             long end=System.currentTimeMillis();
-            System.out.println("总费时:"+(end-startTime)+"ms");
+            System.out.println("总费时:"+(end-startTime)/1000+"s");
         } catch (Exception e) {
             e.printStackTrace();
         }
