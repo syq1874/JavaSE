@@ -1,4 +1,4 @@
-package d0919;
+package d0919.Dome;
 
 public class Dog{
     //成员变量，定义属性

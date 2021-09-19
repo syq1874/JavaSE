@@ -1,4 +1,4 @@
-package d0919;
+package d0919.Dome;
 
 public class DogTest {
     public static void main(String[] args) {
