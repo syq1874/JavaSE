@@ -10,6 +10,7 @@ public class Cat {
 
     //有参构造函数
     public Cat(String name) {
+        //电影成员属性
         this.name = name;
     }
 
