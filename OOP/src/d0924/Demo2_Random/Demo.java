@@ -1,4 +1,4 @@
-package d0924.Demo2;
+package d0924.Demo2_Random;
 
 import java.util.Random;
 

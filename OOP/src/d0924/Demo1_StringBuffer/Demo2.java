@@ -1,4 +1,4 @@
-package d0924.Demo;
+package d0924.Demo1_StringBuffer;
 
 public class Demo2 {
     public static void main(String[] args) {
